@@ -67,7 +67,7 @@ public class GUI {
     }
 
     public static Menu createPublicKitMenu() {
-        return ChestMenu.builder(6).title(ChatColor.BLUE + "Public Kit Room").redraw(true).build();
+        return ChestMenu.builder(6).title(ChatColor.GRAY + "ᴘᴜʙʟɪᴄ ᴋɪᴛ ʀᴏᴏᴍ").redraw(true).build();
     }
 
     public static boolean removeKitDeletionFlag(Player player) {
@@ -89,15 +89,15 @@ public class GUI {
         for (int i = 41; i < 54; i++) {
             menu.getSlot(i).setItem(ItemUtil.createItem(Material.LIGHT_BLUE_STAINED_GLASS_PANE, 1, " "));
         }
-        menu.getSlot(45).setItem(createItem(Material.CHAINMAIL_BOOTS, 1, "&7&lBOOTS"));
-        menu.getSlot(46).setItem(createItem(Material.CHAINMAIL_LEGGINGS, 1, "&7&lLEGGINGS"));
-        menu.getSlot(47).setItem(createItem(Material.CHAINMAIL_CHESTPLATE, 1, "&7&lCHESTPLATE"));
-        menu.getSlot(48).setItem(createItem(Material.CHAINMAIL_HELMET, 1, "&7&lHELMET"));
+        menu.getSlot(45).setItem(createItem(Material.CHAINMAIL_BOOTS, 1, "&7ʙᴏᴏᴛꜱ"));
+        menu.getSlot(46).setItem(createItem(Material.CHAINMAIL_LEGGINGS, 1, "&7ʟᴇɢɢɪɴɢꜱ"));
+        menu.getSlot(47).setItem(createItem(Material.CHAINMAIL_CHESTPLATE, 1, "&7ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ"));
+        menu.getSlot(48).setItem(createItem(Material.CHAINMAIL_HELMET, 1, "&7ʜᴇʟᴍᴇᴛ"));
         menu.getSlot(49).setItem(createItem(Material.SHIELD, 1, "&7&lOFFHAND"));
 
         menu.getSlot(51).setItem(createItem(Material.CHEST, 1, "&a&lIMPORT", "&7● Import from inventory"));
-        menu.getSlot(52).setItem(createItem(Material.BARRIER, 1, "&c&lCLEAR KIT", "&7● Shift click to clear"));
-        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&c&lBACK"));
+        menu.getSlot(52).setItem(createItem(Material.BARRIER, 1, "&cᴄʟᴇᴀʀ ᴋɪᴛ", "&7● Shift click to clear"));
+        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&cʙᴀᴄᴋ"));
         addMainButton(menu.getSlot(53));
         addClear(menu.getSlot(52));
         addImport(menu.getSlot(51));
@@ -122,15 +122,15 @@ public class GUI {
         for (int i = 41; i < 54; i++) {
             menu.getSlot(i).setItem(ItemUtil.createItem(Material.LIGHT_BLUE_STAINED_GLASS_PANE, 1, " "));
         }
-        menu.getSlot(45).setItem(createItem(Material.CHAINMAIL_BOOTS, 1, "&7&lBOOTS"));
-        menu.getSlot(46).setItem(createItem(Material.CHAINMAIL_LEGGINGS, 1, "&7&lLEGGINGS"));
-        menu.getSlot(47).setItem(createItem(Material.CHAINMAIL_CHESTPLATE, 1, "&7&lCHESTPLATE"));
-        menu.getSlot(48).setItem(createItem(Material.CHAINMAIL_HELMET, 1, "&7&lHELMET"));
+        menu.getSlot(45).setItem(createItem(Material.CHAINMAIL_BOOTS, 1, "&7ʙᴏᴏᴛꜱ"));
+        menu.getSlot(46).setItem(createItem(Material.CHAINMAIL_LEGGINGS, 1, "&7ʟᴇɢɢɪɴɢꜱ"));
+        menu.getSlot(47).setItem(createItem(Material.CHAINMAIL_CHESTPLATE, 1, "&7ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ"));
+        menu.getSlot(48).setItem(createItem(Material.CHAINMAIL_HELMET, 1, "&7ʜᴇʟᴍᴇᴛ"));
         menu.getSlot(49).setItem(createItem(Material.SHIELD, 1, "&7&lOFFHAND"));
 
         menu.getSlot(51).setItem(createItem(Material.CHEST, 1, "&a&lIMPORT", "&7● Import from inventory"));
-        menu.getSlot(52).setItem(createItem(Material.BARRIER, 1, "&c&lCLEAR KIT", "&7● Shift click to clear"));
-        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&c&lBACK"));
+        menu.getSlot(52).setItem(createItem(Material.BARRIER, 1, "&cᴄʟᴇᴀʀ ᴋɪᴛ", "&7● Shift click to clear"));
+        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&cʙᴀᴄᴋ"));
         addMainButton(menu.getSlot(53));
         addClear(menu.getSlot(52));
         addImport(menu.getSlot(51));
@@ -162,8 +162,8 @@ public class GUI {
             allowModification(menu.getSlot(i));
         }
         menu.getSlot(51).setItem(createItem(Material.ENDER_CHEST, 1, "&a&lIMPORT", "&7● Import from enderchest"));
-        menu.getSlot(52).setItem(createItem(Material.BARRIER, 1, "&c&lCLEAR KIT", "&7● Shift click to clear"));
-        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&c&lBACK"));
+        menu.getSlot(52).setItem(createItem(Material.BARRIER, 1, "&cᴄʟᴇᴀʀ ᴋɪᴛ", "&7● Shift click to clear"));
+        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&cʙᴀᴄᴋ"));
         addMainButton(menu.getSlot(53));
         addClear(menu.getSlot(52), 9, 36);
         addImportEC(menu.getSlot(51));
@@ -185,13 +185,13 @@ public class GUI {
         for (int i = 41; i < 54; i++) {
             menu.getSlot(i).setItem(ItemUtil.createItem(Material.LIGHT_BLUE_STAINED_GLASS_PANE, 1, " "));
         }
-        menu.getSlot(45).setItem(createItem(Material.CHAINMAIL_BOOTS, 1, "&7&lBOOTS"));
-        menu.getSlot(46).setItem(createItem(Material.CHAINMAIL_LEGGINGS, 1, "&7&lLEGGINGS"));
-        menu.getSlot(47).setItem(createItem(Material.CHAINMAIL_CHESTPLATE, 1, "&7&lCHESTPLATE"));
-        menu.getSlot(48).setItem(createItem(Material.CHAINMAIL_HELMET, 1, "&7&lHELMET"));
+        menu.getSlot(45).setItem(createItem(Material.CHAINMAIL_BOOTS, 1, "&7ʙᴏᴏᴛꜱ"));
+        menu.getSlot(46).setItem(createItem(Material.CHAINMAIL_LEGGINGS, 1, "&7ʟᴇɢɢɪɴɢꜱ"));
+        menu.getSlot(47).setItem(createItem(Material.CHAINMAIL_CHESTPLATE, 1, "&7ᴄʜᴇꜱᴛᴘʟᴀᴛᴇ"));
+        menu.getSlot(48).setItem(createItem(Material.CHAINMAIL_HELMET, 1, "&7ʜᴇʟᴍᴇᴛ"));
         menu.getSlot(49).setItem(createItem(Material.SHIELD, 1, "&7&lOFFHAND"));
 
-        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&c&lCLOSE"));
+        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&cᴄʟᴏꜱᴇ"));
         menu.getSlot(53).setClickHandler((player, info) -> {
             SoundManager.playClick(player);
             info.getClickedMenu().close();
@@ -231,7 +231,7 @@ public class GUI {
             }
         }
 
-        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&c&lCLOSE"));
+        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&cᴄʟᴏꜱᴇ"));
         menu.getSlot(53).setClickHandler((player, info) -> {
             SoundManager.playClick(player);
             info.getClickedMenu().close();
@@ -242,7 +242,7 @@ public class GUI {
             for (int i = 9; i < 36; i++) {
                 allowModification(menu.getSlot(i));
             }
-            menu.getSlot(52).setItem(createItem(Material.BARRIER, 1, "&c&lCLEAR ENDERCHEST", "&7● Shift click to delete enderchest"));
+            menu.getSlot(52).setItem(createItem(Material.BARRIER, 1, "&cᴄʟᴇᴀʀ ᴇɴᴅᴇʀᴄʜᴇꜱᴛ", "&7● Shift click to delete enderchest"));
             addClearEnderchest(menu.getSlot(52), target, slot);
         }
 
@@ -316,11 +316,11 @@ public class GUI {
             }
         }
 
-        menu.getSlot(45).setItem(createItem(Material.BEACON, 1, "&3&lREFILL"));
+        menu.getSlot(45).setItem(createItem(Material.BARREL, 1, "&3ʀᴇꜰɪʟʟ"));
         addKitRoom(menu.getSlot(45), page);
 
         if (!p.hasPermission("perplayerkit.editkitroom")) {
-            menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&c&lBACK"));
+            menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&cʙᴀᴄᴋ"));
             addMainButton(menu.getSlot(53));
         } else {
             menu.getSlot(53).setItem(createItem(Material.BARRIER, page + 1, "&c&lEDIT MENU", "&cSHIFT RIGHT CLICK TO SAVE"));
@@ -352,10 +352,10 @@ public class GUI {
             }
             return null;
         }
-        Menu menu = ChestMenu.builder(6).title(ChatColor.BLUE + "Viewing Public Kit: " + id).redraw(true).build();
+        Menu menu = ChestMenu.builder(6).title(ChatColor.GRAY + "ᴠɪᴇᴡɪɴɢ ᴘᴜʙʟɪᴄ ᴋɪᴛ " + id).redraw(true).build();
 
         for (int i = 0; i < 54; i++) {
-            menu.getSlot(i).setItem(ItemUtil.createItem(Material.BLUE_STAINED_GLASS_PANE, 1, " "));
+            menu.getSlot(i).setItem(ItemUtil.createItem(Material.LIGHT_BLUE_STAINED_GLASS_PANE, 1, " "));
         }
 
         for (int i = 9; i < 36; i++) {
@@ -368,8 +368,8 @@ public class GUI {
             menu.getSlot(i + 9).setItem(kit[i]);
         }
 
-        menu.getSlot(52).setItem(createItem(Material.APPLE, 1, "&a&lLOAD KIT"));
-        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&c&lBACK"));
+        menu.getSlot(52).setItem(createItem(Material.APPLE, 1, "&aʟᴏᴀᴅ ᴋɪᴛ"));
+        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&cʙᴀᴄᴋ"));
         addPublicKitMenu(menu.getSlot(53));
         addLoadPublicKit(menu.getSlot(52), id);
 
@@ -386,7 +386,7 @@ public class GUI {
         }
 
         for (int i = 18; i < 36; i++) {
-            menu.getSlot(i).setItem(ItemUtil.createItem(Material.BOOK, 1, "&7&lMORE KITS COMING SOON"));
+            menu.getSlot(i).setItem(ItemUtil.createItem(Material.BOOK, 1, "&7ᴍᴏʀᴇ ᴋɪᴛꜱ ᴄᴏᴍɪɴɢ ꜱᴏᴏɴ"));
         }
 
         List<PublicKit> publicKitList = KitManager.get().getPublicKitList();
@@ -414,7 +414,7 @@ public class GUI {
 
         addMainButton(menu.getSlot(53));
 
-        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&c&lBACK"));
+        menu.getSlot(53).setItem(createItem(Material.OAK_DOOR, 1, "&cʙᴀᴄᴋ"));
         menu.open(player);
         SoundManager.playOpenGui(player);
     }
@@ -563,7 +563,7 @@ public class GUI {
             SoundManager.playClick(player);
             if (info.getClickType().isShiftClick()) {
                 player.getInventory().clear();
-                player.sendMessage(ChatColor.GREEN + "Inventory cleared");
+                player.sendMessage(ChatColor.GRAY + "ɪɴᴠᴇɴᴛᴏʀʏ ᴄʟᴇᴀʀᴇᴅ");
                 SoundManager.playSuccess(player);
             }
         });
@@ -653,15 +653,15 @@ public class GUI {
     }
 
     public Menu createKitMenu(int slot) {
-        return ChestMenu.builder(6).title(ChatColor.BLUE + "Kit: " + slot).build();
+        return ChestMenu.builder(6).title(ChatColor.GRAY + "ᴋɪᴛ " + slot).build();
     }
 
     public Menu createPublicKitMenu(String id) {
-        return ChestMenu.builder(6).title(ChatColor.BLUE + "Public Kit: " + id).build();
+        return ChestMenu.builder(6).title(ChatColor.GRAY + "ᴘᴜʙʟɪᴄ ᴋɪᴛ " + id).build();
     }
 
     public Menu createECMenu(int slot) {
-        return ChestMenu.builder(6).title(ChatColor.BLUE + "Enderchest: " + slot).build();
+        return ChestMenu.builder(6).title(ChatColor.GRAY + "ᴇɴᴅᴇʀᴄʜᴇꜱᴛ " + slot).build();
     }
 
     public Menu createInspectMenu(int slot, String playerName) {
@@ -673,11 +673,11 @@ public class GUI {
     }
 
     public Menu createMainMenu(Player p) {
-        return ChestMenu.builder(6).title(ChatColor.BLUE + p.getName() + "'s Kits").build();
+        return ChestMenu.builder(6).title(ChatColor.GRAY + "ᴋɪᴛꜱ").build();
     }
 
     public Menu createKitRoom() {
-        return ChestMenu.builder(6).title(ChatColor.BLUE + "Kit Room").redraw(true).build();
+        return ChestMenu.builder(6).title(ChatColor.GRAY + "ᴋɪᴛ ʀᴏᴏᴍ").redraw(true).build();
     }
 
     public void allowModification(Slot slot) {
