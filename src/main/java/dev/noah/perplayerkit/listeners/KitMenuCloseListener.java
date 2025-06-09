@@ -41,10 +41,10 @@ public class KitMenuCloseListener implements Listener {
         if (inv.getSize() == 54) {
             if (inv.getLocation() == null) {
                 InventoryView view = e.getView();
-                if (view.getTitle().contains(ChatColor.BLUE + "Kit: ")) {
+                if (view.getTitle().contains(ChatColor.DARK_GRAY + "ᴋɪᴛ ")) {
                     Player p = (Player) e.getPlayer();
                     UUID uuid = p.getUniqueId();
-                    int slot = Integer.parseInt(view.getTitle().replace(ChatColor.BLUE + "Kit: ", ""));
+                    int slot = Integer.parseInt(view.getTitle().replace(ChatColor.DARK_GRAY + "ᴋɪᴛ ", ""));
                     ItemStack[] kit = new ItemStack[41];
                     ItemStack[] chestitems = e.getInventory().getContents();
 
@@ -67,9 +67,9 @@ public class KitMenuCloseListener implements Listener {
         if (inv.getSize() == 54) {
             if (inv.getLocation() == null) {
                 InventoryView view = e.getView();
-                if (view.getTitle().contains(ChatColor.BLUE + "Public Kit: ")) {
+                if (view.getTitle().contains(ChatColor.DARK_GRAY + "ᴘᴜʙʟɪᴄ ᴋɪᴛ ")) {
                     Player player = (Player) e.getPlayer();
-                    String publickit = view.getTitle().replace(ChatColor.BLUE + "Public Kit: ", "");
+                    String publickit = view.getTitle().replace(ChatColor.BLUE + "ᴘᴜʙʟɪᴄ ᴋɪᴛ ", "");
                     ItemStack[] kit = new ItemStack[41];
                     ItemStack[] chestitems = e.getInventory().getContents();
 
@@ -92,10 +92,10 @@ public class KitMenuCloseListener implements Listener {
         if (inv.getSize() == 54) {
             if (inv.getLocation() == null) {
                 InventoryView view = e.getView();
-                if (view.getTitle().contains(ChatColor.BLUE + "Enderchest: ")) {
+                if (view.getTitle().contains(ChatColor.DARK_GRAY + "ᴇɴᴅᴇʀᴄʜᴇꜱᴛ ")) {
                     Player p = (Player) e.getPlayer();
                     UUID uuid = p.getUniqueId();
-                    int slot = Integer.parseInt(view.getTitle().replace(ChatColor.BLUE + "Enderchest: ", ""));
+                    int slot = Integer.parseInt(view.getTitle().replace(ChatColor.DARK_GRAY + "ᴇɴᴅᴇʀᴄʜᴇꜱᴛ ", ""));
                     ItemStack[] kit = new ItemStack[27];
                     ItemStack[] chestitems = e.getInventory().getContents();
 
