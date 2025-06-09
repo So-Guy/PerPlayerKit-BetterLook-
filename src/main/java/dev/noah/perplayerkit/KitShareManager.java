@@ -79,8 +79,8 @@ public class KitShareManager {
             String id = RandomStringUtils.randomAlphanumeric(6).toUpperCase();
 
             if (kitShareMap.putIfAbsent(id, kitManager.getPlayerKit(uuid, slot).clone()) == null) {
-                p.sendMessage(ChatColor.GREEN + "Use /copykit " + id + " to copy this kit");
-                p.sendMessage(ChatColor.GREEN + "Code expires in 15 minutes");
+                p.sendMessage(ChatColor.GRAY + "ᴜꜱᴇ /ᴄᴏᴘʏᴋɪᴛ " + id + " ᴛᴏ ᴄᴏᴘʏ ᴛʜɪꜱ ᴋɪᴛ");
+                p.sendMessage(ChatColor.GREEN + "ᴄᴏᴅᴇ ᴇxᴘɪʀᴇꜱ ɪɴ 15 ᴍɪɴᴜᴛᴇꜱ");
                 SoundManager.playSuccess(p);
 
 
@@ -100,7 +100,7 @@ public class KitShareManager {
             }
 
         } else {
-            p.sendMessage(ChatColor.RED + "Error, that kit does not exist");
+            p.sendMessage(ChatColor.GRAY + "ᴇʀʀᴏʀ, ᴛʜᴀᴛ ᴋɪᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴇxɪꜱᴛ");
             SoundManager.playFailure(p);
         }
 
@@ -114,8 +114,8 @@ public class KitShareManager {
             String id = RandomStringUtils.randomAlphanumeric(6).toUpperCase();
 
             if (kitShareMap.putIfAbsent(id, kitManager.getPlayerEC(uuid, slot).clone()) == null) {
-                p.sendMessage(ChatColor.GREEN + "Use /copyEC " + id + " to copy this enderchest");
-                p.sendMessage(ChatColor.GREEN + "Code expires in 15 minutes");
+                p.sendMessage(ChatColor.GRAY + "ᴜꜱᴇ /ᴄᴏᴘʏᴇᴄ " + id + " ᴛᴏ ᴄᴏᴘʏ ᴛʜɪꜱ ᴇɴᴅᴇʀᴄʜᴇꜱᴛ");
+                p.sendMessage(ChatColor.GREEN + "ᴄᴏᴅᴇ ᴇxᴘɪʀᴇꜱ ɪɴ 15 ᴍɪɴᴜᴛᴇꜱ");
                 SoundManager.playSuccess(p);
 
 
@@ -135,7 +135,7 @@ public class KitShareManager {
             }
 
         } else {
-            p.sendMessage(ChatColor.RED + "Error, that EC does not exist");
+            p.sendMessage(ChatColor.GRAY + "ᴇʀʀᴏʀ, ᴛʜᴀᴛ ᴇᴄ ᴅᴏᴇꜱ ɴᴏᴛ ᴇxɪꜱᴛ");
             SoundManager.playFailure(p);
         }
 
@@ -146,7 +146,7 @@ public class KitShareManager {
 
         String id = str.toUpperCase();
         if (!kitShareMap.containsKey(id)) {
-            p.sendMessage(ChatColor.RED + "Error, kit does not exist or has expired");
+            p.sendMessage(ChatColor.GRAY + "ᴇʀʀᴏʀ, ᴋɪᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴇxɪꜱᴛ ᴏʀ ʜᴀꜱ ᴇxᴘɪʀᴇᴅ");
             SoundManager.playFailure(p);
             return;
         }
