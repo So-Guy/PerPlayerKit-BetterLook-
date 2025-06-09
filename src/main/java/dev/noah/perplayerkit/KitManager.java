@@ -108,7 +108,7 @@ public class KitManager {
                     Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> savePlayerKitToDB(uuid, slot));
                     return true;
                 } else {
-                    player.sendMessage(ChatColor.RED + "You cant save an empty kit!");
+                    player.sendMessage(ChatColor.GRAY + "ʏᴏᴜ ᴄᴀɴᴛ ꜱᴀᴠᴇ ᴀɴ ᴇᴍᴘᴛʏ ᴋɪᴛ!");
                 }
             }
         }
@@ -148,12 +148,12 @@ public class KitManager {
             }
 
             kitByKitIDMap.put(IDUtil.getPublicKitId(publickit), kit);
-            player.sendMessage(ChatColor.GREEN + "Public Kit " + publickit + " saved!");
+            player.sendMessage(ChatColor.GRAY + "ᴘᴜʙʟɪᴄᴋɪᴛ " + publickit + " ꜱᴀᴠᴇᴅ!");
 
             Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> savePublicKitToDB(publickit));
             return true;
         } else {
-            player.sendMessage(ChatColor.RED + "You cant save an empty kit!");
+            player.sendMessage(ChatColor.GRAY + "ʏᴏᴜ ᴄᴀɴᴛ ꜱᴀᴠᴇ ᴀɴ ᴇᴍᴘᴛʏ ᴋɪᴛ!");
         }
         return false;
     }
@@ -211,11 +211,11 @@ public class KitManager {
 
                 if (notEmpty) {
                     kitByKitIDMap.put(IDUtil.getECId(uuid, slot), kit);
-                    player.sendMessage(ChatColor.GREEN + "Enderchest " + slot + " saved!");
+                    player.sendMessage(ChatColor.GREEN + "ᴇɴᴅᴇʀᴄʜᴇꜱᴛ " + slot + " ꜱᴀᴠᴇᴅ!");
                     Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> saveEnderchestToDB(uuid, slot));
                     return true;
                 } else {
-                    player.sendMessage(ChatColor.RED + "You cant save an empty enderchest!");
+                    player.sendMessage(ChatColor.GRAY + "ʏᴏᴜ ᴄᴀɴᴛ ꜱᴀᴠᴇ ᴀɴ ᴇᴍᴘᴛʏ ᴋɪᴛ!");
                 }
             }
         }
@@ -261,7 +261,7 @@ public class KitManager {
                         kitByKitIDMap.put(IDUtil.getPlayerKitId(uuid, slot), ItemFilter.get().filterItemStack(kit));
                         return true;
                     } else {
-                        player.sendMessage(ChatColor.RED + "You cant save an empty kit!");
+                        player.sendMessage(ChatColor.GRAY + "ʏᴏᴜ ᴄᴀɴᴛ ꜱᴀᴠᴇ ᴀɴ ᴇᴍᴘᴛʏ ᴋɪᴛ!");
                     }
                 }
             }
@@ -314,7 +314,7 @@ public class KitManager {
         ItemStack[] kit = kitByKitIDMap.get(kitId);
         if (kit == null) {
             if (notFoundMessage != null) {
-                player.sendMessage(ChatColor.RED + notFoundMessage);
+                player.sendMessage(ChatColor.GRAY + notFoundMessage);
                 SoundManager.playFailure(player);
             }
             return false;
@@ -337,7 +337,7 @@ public class KitManager {
     public boolean loadKit(Player player, int slot) {
         return loadKitInternal(player, IDUtil.getPlayerKitId(player.getUniqueId(), slot), "Kit " + slot + " does not exist!", false, () -> {
             BroadcastManager.get().broadcastPlayerLoadedPrivateKit(player);
-            player.sendMessage(ChatColor.GREEN + "Kit " + slot + " loaded!");
+            player.sendMessage(ChatColor.GREEN + "ᴋɪᴛ " + slot + " ʟᴏᴀᴅᴇᴅ!");
             lastKitUsedByPlayer.put(player.getUniqueId(), slot);
         });
     }
@@ -347,10 +347,10 @@ public class KitManager {
     }
 
     public boolean loadPublicKit(Player player, String id) {
-        return loadKitInternal(player, IDUtil.getPublicKitId(id), "Kit does not exist!", false, () -> {
+        return loadKitInternal(player, IDUtil.getPublicKitId(id), "ᴋɪᴛ ᴅᴏᴇꜱ ɴᴏᴛ ᴇxɪꜱᴛ!", false, () -> {
             BroadcastManager.get().broadcastPlayerLoadedPublicKit(player);
-            player.sendMessage(ChatColor.GREEN + "Public Kit loaded!");
-            player.sendMessage(ChatColor.GRAY + "You can save this kit by importing into the kit editor");
+            player.sendMessage(ChatColor.GREEN + "ᴘᴜʙʟɪᴄ ᴋɪᴛ ʟᴏᴀᴅᴇᴅ!");
+            player.sendMessage(ChatColor.GRAY + "ʏᴏᴜ ᴄᴀɴ ꜱᴀᴠᴇ ᴛʜɪꜱ ᴋɪᴛ ʙʏ ɪᴍᴘᴏʀᴛɪɴɢ ɪɴᴛᴏ ᴛʜᴇ ᴋɪᴛ ᴇᴅɪᴛᴏʀ");
         });
     }
 
